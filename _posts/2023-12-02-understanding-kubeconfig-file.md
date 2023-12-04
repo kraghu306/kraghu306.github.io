@@ -22,7 +22,7 @@ The Kubernetes configuration file often referred as kubeconfig, which is used to
 
 The configuration file is very much crucial for managing multiple Kubernetes clusters or switching between users and namespaces within same cluster or switch to a different cluster altogether. The configuration file is used by the command `kubectl` or client libraries to authenticate and access the Kubernetes resources withing a cluster.
 
-![kubeconfig file](https://hadoopbinaries.blob.core.windows.net/blog-images/kubeconfig-darkmode.png)
+![kubeconfig file](https://blogassets.blob.core.windows.net/images/kubeconfig.png)
 
 ### YAML - KubeConfig Sample
 ```yaml
