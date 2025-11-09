@@ -27,7 +27,7 @@ Now, why is this important? Because unlike `fire-and-forget` message brokers, Ka
 ### Kafka vs. Traditional Messaging Systems  
 To better understand Kafka's architecture, it helps to contrast it with more familiar systems, such as:  
 | Traditional Messaging Systems | Kafka Streaming Platform |
-|-----------------------------|-------------------------|
+| :--------------------------- | ----------------------: |
 | Transient message persistence—once consumed, removed from broker | Events are stored on disk/log and retained for a period, immutable once written |
 | Broker tracks what's consumed and removes messages upon consumption | Consumers track their offsets and messages remain until retention criteria |
 | Targeted to a specific consumer read | Any consumer (with permissions) can read the same stream independently |
