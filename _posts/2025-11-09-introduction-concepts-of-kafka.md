@@ -26,14 +26,20 @@ Now, why is this important? Because unlike `fire-and-forget` message brokers, Ka
 
 ### Kafka vs. Traditional Messaging Systems  
 To better understand Kafka's architecture, it helps to contrast it with more familiar systems, such as:  
-| Traditional Messaging Systems | Kafka Streaming Platform |
-| :--------------------------- | ----------------------: |
-| Transient message persistence—once consumed, removed from broker | Events are stored on disk/log and retained for a period, immutable once written |
-| Broker tracks what's consumed and removes messages upon consumption | Consumers track their offsets and messages remain until retention criteria |
-| Targeted to a specific consumer read | Any consumer (with permissions) can read the same stream independently |
-| Often single‐broker and not built for massive scale by default | Designed as a distributed streaming system with partitions, brokers and replication |
 
-This comparison surfaces a few of Kafka's superpowers: durability and replay, consumer independence and horizontal scalability.
+**Traditional Messaging Systems**
+- Transient message persistence - once consumed, the message is removed from the broker.
+- The broker tracks what's consumed and removes messages upon consumption.
+- Messages are targeted to a specific consumer for reading.
+- Usually built around single-broker setups and not always designed for massive distributed scale.
+
+**Kafka Streaming Platform**
+- Events are stored on disk/log, retained for a configurable period. Once written, they are immutable.
+- Consumers track their offsets themselves, and messages remain until retention criteria are met.
+- Any consumer (with appropriate permissions) can read the same stream independently.
+- Designed as a distributed streaming system - partitioned with multiple brokers and replication for resilience.
+
+This comparison surfaces a few of Kafka's superpowers: durability and replay, consumer independence, and horizontal scalability.
 
 ### Some Common Use-Cases  
 Where does Kafka *actually* meet the real-world needs? Here are some production-ready scenarios:
