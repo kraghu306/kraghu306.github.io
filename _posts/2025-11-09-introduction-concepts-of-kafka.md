@@ -2,7 +2,7 @@
 title: Apache Kafka - Introduction & Core Concepts  
 categories: [Kafka, Streaming]  
 comments: false  
-tags: [upcoming, apache-kafka, event-streaming, distributed-systems]  
+tags: [apache-kafka, event-streaming, distributed-systems]  
 date: 2025-11-09 00:00:00 +05:30
 ---
 
